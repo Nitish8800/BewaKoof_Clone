@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .conur{
+            background: white;
+        display: flex;
+        }
+        #paym{
+            border: 1px solid lightgray;
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 15px;
+        margin-top: 7%;
+        }
+        #paym>form>input{
+            height: 30px;
+        border-radius: 2.5px;
+        background-color:rgb(255, 255, 255) ;
+        outline: none;
+        width: 98%;
+        border: 1px solid;
+        margin-top: 10%;
+        padding-top: 1%;
+        }
+        #submit{
+            width: 100%;
+  height: 30px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color:#160f0b;
+  background-image: linear-gradient(62deg, rgb(44, 194, 181), rgb(44, 194, 181), rgb(44, 194, 181) 100%);
+  border-radius: 2.5px;
+  margin-top: 22px;
+  border-color: #aa8935 #9c7e31 #06742e;
+  font-weight: bolder;
+        }
+        #ab{
+            /* background-color: rgb(228, 222, 222); */
+        }
+    </style>
+  </head>
+  <body>
+      <div class="conur">
+          <img src="https://i.ibb.co/gwJh56q/Screenshot-172.png" alt="">
+          <div id="paym">
+              <h1> Details</h1>
+    <form action="" id="ab">
+      <input type="text" id="name" placeholder="Account Holder Name" required />
+      <input id="cardno" maxlength="14" minlength="14" placeholder="Card Number" required />
+      <input id="cvv" maxlength="3" placeholder="Enter CVV" required />
+      <input id="exdate" maxlength="10" placeholder="Expiry Date" required />
+      <input type="submit" name="" id="submit" />
+    </div>
+</div>
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", call);
+
+  function call(event) {
+    event.preventDefault(); 
+    var cardno = document.querySelector("#cardno").value;
+    var cvv = document.querySelector("#cvv").value;
+    var exdate = document.querySelector("#exdate").value;
+
+    if (cvv === "123" && exdate === "01-01-2022") {
+      alert("Otp Sent Succesfully");
+      window.location.href = "otp.html";
+    } else {
+      alert("Invalid Details");
+    }
+  }
+</script>

@@ -5,14 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        #ab{
+            border: 1px solid lightgray;
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 15px;
+        margin: auto;
+        margin-top: 15%;
+        }
+    </style>
   </head>
   <body>
+      <div id="ab">
     <form action="" id="My">
-      <p>Enter You OTP</p>
+      <p>Enter Your OTP</p>
       <input type="number" name="" id="otp" required />
       <input type="submit" name="" id="" />
     </form>
     <div id="comment"></div>
+</div>
   </body>
 </html>
 
@@ -30,7 +46,7 @@
       alert("Payment Succesfull");
       document.querySelector("#My").textContent = "";
       var d = document.createElement("div");
-      d.textContent = "Thankyu For Shoping........";
+      d.textContent = "Thank you For Shoping with Bewakoof.com";
       d.style.fontSize = "25px";
       d.style.color = "red";
       document.querySelector("#My").append(d);

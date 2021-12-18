@@ -343,7 +343,9 @@
     opacity: 1;
   }
   
-  
+
+
+
 
   @media only screen and (min-width: 768px) and (max-width: 992px) {
     #widgetImgContainer > ul {
@@ -356,6 +358,11 @@
     }
     .carousel-cell{
       width: 32%;
+    }
+    #campaignImageAhref {
+      display: block;
+      width: 100%;
+      padding-top: 10%;
     }
   }
     
@@ -375,6 +382,11 @@
       .carousel-cell{
         width: 95%;
       }
+      #campaignImageAhref {
+        display: block;
+        width: 100%;
+        padding-top: 10%;
+      }
   }
 
 
@@ -391,6 +403,11 @@
     }
       .carousel-cell{
         width: 95%;
+      }
+      #campaignImageAhref {
+        display: block;
+        width: 100%;
+        padding-top: 10%;
       }
   }
 

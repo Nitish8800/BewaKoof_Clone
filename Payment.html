@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" id="name" placeholder="Account Holder Name" required />
+      <input id="cardno" maxlength="14" minlength="14" placeholder="Card Number" required />
+      <input id="cvv" maxlength="3" placeholder="Enter CVV" required />
+      <input id="exdate" maxlength="10" placeholder="Expiry Date" required />
+      <input type="submit" name="" id="" />
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", call);
+
+  function call(event) {
+    event.preventDefault(); 
+    var cardno = document.querySelector("#cardno").value;
+    var cvv = document.querySelector("#cvv").value;
+    var exdate = document.querySelector("#exdate").value;
+
+    if (cvv === "123" && exdate === "01-01-2022") {
+      alert("Otp Sent Succesfully");
+      window.location.href = "otp.html";
+    } else {
+      alert("Invalid Details");
+    }
+  }
+</script>

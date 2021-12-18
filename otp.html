@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="My">
+      <p>Enter You OTP</p>
+      <input type="number" name="" id="otp" required />
+      <input type="submit" name="" id="" />
+    </form>
+    <div id="comment"></div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#My").addEventListener("submit", confirm);
+
+  function confirm(event) {
+    event.preventDefault();
+    console.log("here");
+    var comment = document.querySelector("#comment");
+    comment.textContent = "";
+    var otp = document.querySelector("#otp").value;
+
+    if (otp == "1234") {
+      alert("Payment Succesfull");
+      document.querySelector("#My").textContent = "";
+      var d = document.createElement("div");
+      d.textContent = "Thankyu For Shoping........";
+      d.style.fontSize = "25px";
+      d.style.color = "red";
+      document.querySelector("#My").append(d);
+    } else {
+      alert("Invalid OTP");
+      comment.textContent = "Invalid OTP";
+    }
+  }
+</script>

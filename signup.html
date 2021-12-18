@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singup</title>
+    <style>
+      .sdiv{
+       display: flex;
+      }
+      #signupimg
+      {
+      width: 50%;
+      height: 700px;
+      }
+     #headsign
+     {
+      font-family :montserrat-bold, sans-serif;
+      margin: auto;
+     }
+      #hpra{
+          font-family:montserrat, sans-serif;
+          font-size:15px;
+          color: grey;
+      }
+      #mobilesignup{
+        padding-top: 6%;
+        text-align: center;
+        padding-bottom: 2%;
+      }
+      #details
+      {
+        width: 40%;
+        margin: auto;
+      }
+      .email,.password,.username,.mobile{
+        width: 100%;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+      }
+      #down{
+        width: 60%;
+        margin: auto;
+      }
+  </style>
+</head>
+<body>
+  <div class="sdiv">
+    <img id="signupimg"  src="https://i.ibb.co/GR6GGBX/Screenshot-167.png" alt="img">
+    <div id="mobilesignup">
+<h2 id="headsign">Log in/ Sign up</h2>
+<p id="hpra">for Latest trends, exciting offers and everything Bewakoof!</p>
+<div id="details">
+    <input class="email" type="text" placeholder="enter email address">
+    <input class="password" type="password" placeholder="enter password">
+    <input class="username" type="text" placeholder="enter usename" >
+    <input type="number" placeholder="enter mobile" class="mobile">
+    
+      <br>
+     <a href="singin.html"><button class="button">Sign Up</button></a> 
+    </div>
+    <br>
+    <a href="singin.html"><img src="https://i.ibb.co/vZrjGxx/Screenshot-169.png" alt="image" id="down"></a>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+document.querySelector(".button").addEventListener("click",addDetails)
+var arr=JSON.parse(localStorage.getItem("userDetails")) || []
+
+function addDetails(event){
+    event.preventDefault()
+    var email = document.querySelector(".email").value
+    var pass = document.querySelector(".password").value
+    var username = document.querySelector(".username").value
+    var mobile = document.querySelector(".mobile").value
+   
+   var userDetails = {
+
+     email:email,
+     pass:pass,
+     username:username,
+     mobile:mobile,
+   }
+arr.push(userDetails)
+localStorage.setItem("userDetails",JSON.stringify(arr))
+// console.log(arr)
+
+
+}
+
+
+</script>

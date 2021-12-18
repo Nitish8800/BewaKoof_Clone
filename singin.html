@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singin</title>
+    <style>
+    .sdiv{
+     display: flex;
+    }
+    #signupimg
+    {
+    width: 50%;
+    height: 750px;
+    }
+   #headsign
+   {
+       padding-top: 2%;
+    font-family :montserrat-bold, sans-serif;
+    margin: auto;
+    padding-bottom: 3%;
+   }
+    #hpra{
+        font-family:montserrat, sans-serif;
+        font-size:18px;
+        padding-bottom: 5%;
+    }
+    #mobilesignup
+    { margin: auto;
+        text-align: center;
+        
+    }
+    #signindiv{
+        width: 40%;
+        text-align: center;
+        margin: auto;
+    }
+    .email,.password{
+        width: 100%;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+</style>
+</head>
+<body>
+    <div class="sdiv">
+        <img id="signupimg"  src="https://i.ibb.co/GR6GGBX/Screenshot-167.png" alt="img">
+        <div id="mobilesignup">
+    <h1 id="headsign">Log in</h1>
+    <p id="hpra">For Latest trends, exciting offers and everything Bewakoof!</p>
+    <div id="signindiv">
+    <input class="email" type="text" placeholder="Enter Your Email">
+    <input class="password" type="password" placeholder="enter password">
+    <button class="button">Sign In</button>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script>
+document.querySelector("button").addEventListener("click", signin)
+function signin(){
+var registereduser = JSON.parse(localStorage.getItem("userDetails"))
+    var email = document.querySelector(".email").value
+    var pass = document.querySelector(".password").value
+
+    if(email=="admin" && pass=="admin"){
+      window.location.href="admin.html"
+    }else{
+        for(var i=0;i<registereduser.length;i++){
+            if(registereduser[i].email == email && registereduser[i].pass == pass){
+                window.location.href="product.html"
+            }
+        }
+    }
+}
+</script>

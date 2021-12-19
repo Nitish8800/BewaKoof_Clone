@@ -1,0 +1,592 @@
+
+
+/* HEADER ALL CSS START */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    line-height: 1;
+    font-family: montserrat,sans-serif;
+    /* text-rendering: optimizeLegibility; */
+}
+
+
+/* header */
+
+.headerDivWrapper{
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    height: 79px;
+    transition: top 0.3s;
+    display: block;
+    margin: auto;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+
+}
+
+.topBar,.topBarWrapper{
+    width: 100%;
+    display: inline-block;
+    background: #eee;
+    text-align: center;
+   
+}
+
+.topBar{
+    padding: 8px 0 6px;
+    max-width: 1170px;
+    margin: 0 auto;
+    font-size:0.67em;
+    font-weight: 500;
+ 
+ 
+}
+
+#topBarBox{
+  background-color: white;
+  /* margin-top: -10px; */
+  width: 100%;
+  height: 20px;
+}
+
+.pull-left {
+    float: left!important;
+
+}
+
+.headerLinks{
+    text-decoration: none;
+    color: rgba(0,0,0,.8);
+    margin: 8px;
+}
+
+.pull-right{
+    float: right!important;
+}
+
+
+.mobileIcon {
+    font-size: 10px;
+    margin-right: 3px;
+}
+
+.mainHeaderWrapper {
+    width: 100%;
+    background: white;
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: -25px;
+    
+ 
+}
+
+.mainHeaderWrapper .mainHeader {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.mainHeaderCols.bewakoofLogoDiv, .mainHeaderCols.bewakoofLogoDiv .bewakoofLogo {
+    line-height: 52px;
+    height: 52px;
+    overflow-y: hidden;
+}
+
+.col-xs-2 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+
+}
+
+.mainHeaderCols{
+    padding: 0 9px!important;
+}
+
+#mainHeaderColsAhref{
+     display: inline-block;
+     height: inherit;
+}
+
+#mainHeaderColsAhref> img{
+    height: 20px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    width: 147px;
+}
+
+.dropDownWrapper{
+    position: static;
+    padding: 0;
+}
+
+.col-xs-5 {
+    width: 41.66666667%;
+    float: left;
+    min-height: 1px;
+}
+
+.mainHeaderCols{
+    float: left;
+    text-align: left;
+}
+
+.dropDownDiv{
+    padding: 0!important;
+    white-space: nowrap;
+}
+
+
+
+.menuSelect span{
+    font-size: 0.8em;
+    font-family: montserrat,sans-serif;
+    letter-spacing: 0.1em;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    color: rgb(2, 2, 26);
+    font-weight: lighter;
+
+}
+
+#menList{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/*   Drop Down   Slider   -   1 */
+
+
+
+
+
+
+  .wrapper .nav-links {
+    display: inline-flex;
+  }
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-links li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 15px;
+    transition: all 0.3s ease;
+  }
+  .nav-links .menuSelectWrpr:hover {
+    border-bottom: 5px solid rgb(167, 245, 10);
+    border-radius: 2px;
+  }
+  
+ 
+  .nav-links li:hover .mega-box {
+    transition: all 0.3s ease;
+    top: 52px;
+    opacity: 1;
+    margin-left: 190px;
+    visibility: visible;
+  }
+
+  .mega-box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+  }
+  .mega-box .content {
+    padding: 25px 20px;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  .mega-box .content .row {
+    width: calc(25% - 30px);
+    line-height: 40px;
+  }
+  .content .row img {
+    object-fit: cover;
+  }
+  .content .row header {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .content .row .mega-links {
+    margin-left: -40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.09);
+  }
+  .row .mega-links li {
+    padding: 0 20px;
+  }
+  .row .mega-links li a {
+    padding: 0px;
+    padding: 0 20px;
+    color: teal;
+    font-size: 17px;
+    display: block;
+  }
+  .row .mega-links li a:hover {
+    color: #201e1e;
+    text-decoration: underline;
+   -webkit-text-decoration-color: red;
+    text-decoration-color: red;
+    border-radius: 0px;
+    border-width: 1px;
+  }
+
+
+  .vl {
+    border-left: 1px solid teal;
+    margin:0px 50px 0px -10px;
+   
+  }
+
+  .liImage{
+     display: grid;      
+     grid-template-columns: repeat(2,90px);
+     float: left;
+     object-fit: cover;
+     margin-top: 20px;
+  }
+
+
+
+.vertical{
+     border: 1px solid black;
+     width: 0.1em;
+     height: 2.6em;
+     margin-left: 145px;
+    display: inline-block;
+    background: #000;
+}
+
+
+.form-controls{
+    font-size: 14px;
+    box-shadow: none;
+    background: #eaeaea;
+    border: 1px solid transparent;
+    color: rgba(0,0,0,.5);
+    border-radius: 5px; 
+}
+
+.margin{
+    margin-top: 20px;
+}
+
+ /* search Container */
+
+
+.searchContainer {
+    box-sizing: border-box;
+    display: flex;
+    width:288px;  
+    background-color: #eaeaea;;
+    border-radius: 5px;
+   align-items: center;
+   padding: 21px;
+   text-align: left;
+   height: 1px;
+   margin:15px auto;
+   justify-content: space-between;
+}
+
+.searchContainer>button{
+    font-weight: lighter;
+    color: rgb(22, 150, 150);
+    background-color: #eaeaea;;
+}
+
+#btn{
+    border: 1px solid transparent;
+    background-color: #eaeaea;
+}
+
+.searchContainer>input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+
+/* Drop Down Button For User */
+
+
+
+.dropbtn {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width:180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 52px;
+    margin-left: -60px;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 9px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .marginLeft{
+    margin-left: -15px;
+  }
+  
+
+  #headerSectionPart{
+    width:110% ;
+    height: 3.3em;
+    background-color: white;
+    margin-top: -25px;
+   color:rgb(2, 2, 2);
+   font-weight: lighter;
+   
+   }
+ 
+   #headerSectionPart > div:first-child{
+     display: grid;
+     grid-template-columns: repeat(3,155px);
+     /* border: 1px solid red; */
+     float: left;
+     margin-top: 25px;
+     margin-left: -280px;
+     font-size: 1.1rem; 
+   }
+ 
+   #headerSectionPart div a{
+     text-decoration: none;
+     color: black;
+   }
+ 
+   #headerSectionPart div a:hover{
+     border-bottom: 5px solid rgb(218, 218, 7);
+     border-radius: 2px;
+     font-weight: bolder;
+      
+     
+   }
+  
+  
+.dropdown-content a:hover {background-color: rgba(228, 222, 222, 0.582);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+  @media screen and (max-width: 970px) {
+    .wrapper .btn {
+      display: block;
+    }
+    .wrapper .nav-links {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 350px;
+      top: 0;
+      left: -100%;
+      background: #242526;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      overflow-y: auto;
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+      transition: all 0.3s ease;
+    }
+
+
+    /* custom scroll bar */
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #242526;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3a3b3c;
+    }
+    #menu-btn:checked ~ .nav-links {
+      left: 0%;
+    }
+    #menu-btn:checked ~ .btn.menu-btn {
+      display: none;
+    }
+    #close-btn:checked ~ .btn.menu-btn {
+      display: block;
+    }
+    .nav-links li {
+      margin: 15px 10px;
+    }
+    .nav-links li a {
+      padding: 0 20px;
+      display: block;
+      font-size: 20px;
+    }
+    .nav-links .drop-menu {
+      position: static;
+      opacity: 1;
+      top: 65px;
+      visibility: visible;
+      padding-left: 20px;
+      width: 100%;
+      max-height: 0px;
+      overflow: hidden;
+      box-shadow: none;
+      transition: all 0.3s ease;
+    }
+    #showDrop:checked ~ .drop-menu,
+    #showMega:checked ~ .mega-box {
+      max-height: 100%;
+    }
+    .nav-links .desktop-item {
+      display: none;
+    }
+    .nav-links .mobile-item {
+      display: block;
+      color: #f2f2f2;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .nav-links .mobile-item:hover {
+      background: #3a3b3c;
+    }
+    .drop-menu li {
+      margin: 0;
+    }
+    .drop-menu li a {
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    .mega-box {
+      position: static;
+      top: 65px;
+      opacity: 1;
+      visibility: visible;
+      padding: 0 20px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .mega-box .content {
+      box-shadow: none;
+      flex-direction: column;
+      padding: 20px 20px 0 20px;
+    }
+    .mega-box .content .row {
+      width: 100%;
+      margin-bottom: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .mega-box .content .row:nth-child(1),
+    .mega-box .content .row:nth-child(2) {
+      border-top: 0px;
+    }
+    .content .row .mega-links {
+      border-left: 0px;
+      padding-left: 15px;
+    }
+    .row .mega-links li {
+      margin: 0;
+    }
+    .content .row header {
+      font-size: 19px;
+    }
+
+    .searchContainer{
+        position: static;
+        opacity: 1;
+        top: 65px;
+        visibility: visible;
+        padding-left: 20px;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: none;
+        transition: all 0.3s ease;
+        border-radius: 0px;
+    }
+
+    .vertical{
+        border: 1px solid transparent;
+        margin-left: 165px;
+        display: inline-block;
+        background-color: transparent;
+   }
+   
+   .topBarWrapper{
+    display: none;
+    background-color: rgb(29, 7, 7);
+
+}
+#topBarBox{
+ background-color: white;
+ top: 0px;
+ width: 100%;
+ height: 0px;
+}
+}
+
+
+
+
+
+  
+  @media only screen and (min-width: 375px) and (max-width: 768px) {
+    .searchContainer{
+      display: none;
+  }
+  #headerSectionPart{
+    display: none;
+  }
+  }
+
+
+
+
+  /* HEADER ALL CSS COMPLETE */

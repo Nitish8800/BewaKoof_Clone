@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signUp.css">
+  </head>
+  <body>
+    <div class="sdiv">
+      <img id="signupimg"  src="https://i.ibb.co/GR6GGBX/Screenshot-167.png" alt="img">
+    <div id="container">
+     <div class="logo">
+       <img
+        
+        src="https://images.bewakoof.com/web/bewakoof-primary-logo-white-bg-2x-1635745564.png"
+        alt="Bewkoof.in"
+      />
+
+    </div> 
+      <div class="formBox">
+        <h2>Create account</h2>
+        <form id="myForm">
+          <h5>E-mail</h5>
+          <input id="email" type="text" placeholder="Enter email" class="input" />
+          <h5>Password</h5>
+          <input id="password" type="text" placeholder="Enter password" class="input"/>
+  <h5>User-Name</h5>
+          <input id="user" type="text" placeholder="Enter username" class="input" />
+          <h5>Phone-no.</h5>
+          <input id="mobile" type="text" placeholder="Enter the phone number" class="input"/>
+          <button class="signUpButton" onclick="alrt()" >SIGN - UP</button>
+          
+        </form>
+        <p>By continuing, you agree to Bewkoof's <a href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=200545940"class="link">Conditions of Use</a> and <a href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=200534380" class="link">Privacy Notice.</a></p></>
+
+        <button class="login_registerButton" id="logInPage" ">Click here for log-in</button>
+      </div>
+    </div>
+    </div>
+
+    
+
+  </body>
+</html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  document.querySelector("button").addEventListener("click", signUp);
+  var userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+  function signUp() {
+    var email = document.querySelector("#email").value;
+    var password = document.querySelector("#password").value;
+    var user = document.querySelector("#user").value;
+    var mobile = document.querySelector("#mobile").value;
+
+    var userCred = {
+      emailAdd: email,
+      pass: password,
+      userName: user,
+      mobile: mobile,
+    };
+    userData.push(userCred);
+    localStorage.setItem("userDatabase", JSON.stringify(userData));
+
+  
+
+  }
+
+  document.querySelector("#logInPage").addEventListener("click", function () {
+    window.location.href = "logIn.html";
+  });
+
+ function alrt(){
+   alert("You Can Log In Now");
+
+ }
+</script>

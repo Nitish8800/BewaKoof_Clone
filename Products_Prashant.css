@@ -1,0 +1,196 @@
+#container01 {
+  padding-bottom: 100px;
+}
+#Prashant_Title_box {
+  display: flex;
+  padding: 10px;
+  line-height: 0px;
+  height: 30px;
+  width: 90%;
+  margin: auto;
+  border: 1px solid transparent;
+  color: #b5917a;
+}
+#Prashant_Title_box > p {
+  margin-left: 10px;
+}
+#Prashant_widgetImg:hover{
+  -webkit-transform: scale(0.9);
+transform: scale(0.9);
+opacity: 0.8;
+-webkit-transition: opacity 800ms ease-in-out 0s;
+transition: opacity 800ms ease-in-out 0s;
+-webkit-transition: -webkit-transform 1s ease-in-out 0s;
+transition: -webkit-transform 1s ease-in-out 0s;
+transition: transform 1s ease-in-out 0s;
+transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+cursor: pointer;
+}
+
+#Prashant_ProductTitle_box {
+  display: flex;
+  height: 50px;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  line-height: 0px;
+  margin-top: 20px;
+  border: 1px solid transparent;
+}
+#Prashant_ProductTitle_box > h2:nth-child(1) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid yellow;
+  line-height: 0px;
+}
+#Prashant_ProductDetails {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  border: 1px solid transparent;
+  margin-top: 20px;
+}
+#Count_of_Products {
+  color: #94969b;
+  margin-left: 10px;
+}
+
+#Prashant_Left_box {
+  width: 25%;
+  border: 1px solid transparent;
+}
+#Prashant_Left_box > p {
+  font-size: small;
+  margin-left: 10px;
+  color: #b5917a;
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
+#Prashant_Right_box {
+  width: 80%;
+  /* margin-left: 20px; */
+  border: 1px solid transparent;
+  line-height: 20px;
+}
+#selectSort {
+  font-size: small;
+  color: #b5917a;
+  margin-left: 700px;
+}
+#selectSort > select {
+  width: 100px;
+  border: 0px;
+}
+#Prashant_Left_box > span {
+  margin-top: 0px;
+  color: #94969b;
+  margin-left: 10px;
+}
+#Prashant_Left_box > span > select {
+  font-size: medium;
+  padding: 20px;
+  width: 240px;
+  position: relative;
+  border: 0px;
+}
+hr {
+  width: 80%;
+  text-align: left;
+  margin-left: 20px;
+}
+#Prashant_Images {
+  /* height: 300px;
+  width: 100%; */
+  border: 1px solid tr;
+  display: grid;
+}
+#Prashant_Product_Deatils {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  grid-gap: 33px;
+  justify-content: center;
+  border: 1px solid transparent;
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
+#Each_Product_box {
+  border: 1px solid transparent;
+  height: 450px;
+}
+#Prices {
+  font-weight: bold;
+  margin-top: 5px;
+}
+#tribess {
+  font-size: small;
+  background-color: #f4f4f4;
+  margin-top: 5px;
+}
+#canceledpricestyle {
+  font-size: small;
+  margin-left: 10px;
+  color: #708393;
+  text-decoration: line-through;
+}
+#Prashant_Product_Deatils > div > div:nth-child(3) {
+  /* border: 1px solid red; */
+  display: flex;
+}
+#productName00 {
+  margin-top: 5px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: medium;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 90%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  margin-left: 8px;
+  line-height: 0px;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: black;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: none;
+  /* color: white; */
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  margin-left: 70px;
+  /* background-color: #262626; */
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 10px;
+}
+.dropdown-container > div {
+  font-size: small;
+  justify-content: space-between;
+  line-height: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.special {
+  margin-top: 25px;
+}
+#Prashant_h2 {
+  color: black;
+}

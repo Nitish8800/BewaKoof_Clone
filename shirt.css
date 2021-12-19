@@ -1,0 +1,172 @@
+
+
+#topbuttons{
+    display: flex;
+    flex-wrap: wrap;
+    color: grey;
+    margin: auto;
+    width: 75%;
+    margin-top: 100px;
+}
+#topbuttons>a{
+    margin-left: 10px;
+    color: grey;
+    text-decoration: none;
+    font-size: 14px;
+}
+#mainBox{
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* border: 1px dotted red; */
+    margin: auto;
+    width: 75%;
+    height: 500px;
+    margin-top: 2%;
+
+} 
+
+.leftmainBox{
+    height: 100%;
+    width: 10%;
+    /* border: 1px dotted lightgreen; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+.middlemainBox{
+    height: 100%;
+    width: 40%;
+    /* border: 1px dotted blue; */
+    margin: auto;
+}
+.middlemainBox>img{
+    height: 100%;
+    width: 100%;
+}
+.rightmainBox{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid greenyellow; */
+    margin: auto;
+}
+#descriptionBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid green; */
+    margin-top: 2%;
+    padding: 5%;
+    background-color: rgba(243, 241, 241, 0.815);
+}
+.leftDesc{
+    width: 40%;
+    height: 100%;
+    text-align: justify;
+    margin: auto;
+}
+.middleBar{
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    margin: auto;
+}
+.rightDesc{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+b{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 15px;
+    color: grey;
+    font-weight: lighter;
+
+}
+
+.swiper-container {
+margin: auto;
+position: relative;
+overflow: hidden;
+list-style: none;
+padding: 0;
+z-index: 1;
+}
+
+element.style {
+height: 74px;
+margin-bottom: 5px;
+}
+.thumbsSliderActiveClass.thumbVideoClass, .thumbsSliderActiveClass img {
+/* border: 2px solid #51cccc; */
+}
+
+@media screen and (max-width: 992px){
+.thumbSlideClass {
+width: 62px;
+overflow: hidden;
+}}
+.thumbSlideClass img {
+width: 100%;
+max-width: 100%;
+}
+.thumbVideoClass {
+background: #fff;
+width: 70px;
+height: 86.5px;
+position: relative;
+overflow: hidden;}
+}
+.thumbVideoClass .playThumbnailVideo, .thumbVideoClass .productThumbVideo {
+top: 50%;
+left: 50%;
+z-index: 9;
+margin:  auto;
+-ms-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+position: absolute;
+border: none;
+}
+.thumbVideoClass .playThumbnailVideo {
+width: 24px;
+height: 24px;
+}
+
+.thumbSlideClass {
+width: 70px;
+height: 86.5px;
+position: relative;
+}
+
+.arrow {
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+}
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+
+img:hover{
+border: black;
+background-color: turquoise;
+}
+
+input:hover{
+    border: none;
+}

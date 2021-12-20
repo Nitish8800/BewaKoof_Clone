@@ -1,0 +1,127 @@
+
+.container{
+    padding-top: 8%;
+    margin-left: 30%;
+}
+
+
+.cart-row{
+    width: 600px;
+    height: auto;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-inline-start: 70px;
+}
+.cart-item-image{
+    width: 150px;
+    height: auto;
+   margin-inline-start: 225px;   
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+#btn2{
+    width: 30%;
+    background-color: white;
+    height: 52px;
+    border: 1px solid gray;
+    margin-top: 15px;
+    color: gray;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#btn1{
+    width: 30%;
+    background-color: white;
+    height: 52px;
+    border: 1px solid gray;
+    margin-top: 15px;
+    color: gray;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.wishlist{
+    width: 69%;
+    background-color: white;
+    height: 52px;
+    border: 1px solid gray;
+    margin-top: 15px;
+    color: gray;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.cart-item-title{
+  margin-inline-start: 190px;
+  color: rgb(112, 109, 109);
+
+
+}
+.you-saved{
+    margin-inline-start: 250px;
+    color: green;
+}
+#prc1,#prc2{
+    margin-inline-start: 280px;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+label{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-right: 35px;
+    background-color: rgb(221, 221, 14);
+    border-radius: 5px;
+}
+.cart-quantity-input{
+   width: 10%;
+   margin-left: 20%;
+   margin-top:15px ;
+   background-color: whitesmoke;
+}
+
+select{
+    background-color: whitesmoke;
+}
+
+.cart-total-title{
+    font-size: 30px;
+    color: teal;
+    
+
+}
+.cart-total-price{
+    font-size: 30px;
+   
+}
+#purch1{
+    width: 600px;
+    height: 50px;
+    background-color: rgb(21, 138, 138);
+    border: 0px;
+    font-size: 30px;
+    color: white;
+    margin-inline-start: 70px;
+    
+    
+}
+.cart-total{
+    margin-inline-start: 70px;
+    
+}
+h2{
+    margin-inline-start: 70px;
+}
+
+
+
+#cartClassbtn{
+    border-radius: 100px;
+    margin-left: -17px;
+    padding: 4px ;
+    font-size: 8px;
+  
+  
+  }
+  
+
+

@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+#P01 {
+  margin: auto;
+  height: 400px;
+  width: 300px;
+  margin-top: 70px;
+}
+img {
+  height: 400px;
+  width: 300px;
+}
+#P02 {
+  text-align: center;
+  color: yellow;
+}

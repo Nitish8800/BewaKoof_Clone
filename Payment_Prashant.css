@@ -1,0 +1,46 @@
+.conur {
+  background: transparent;
+  display: flex;
+}
+.conur > img {
+  height: 500px;
+  margin-top: 50px;
+}
+#paym {
+  border: 1px solid lightgray;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  margin-top: 10%;
+}
+#paym > form > input {
+  height: 30px;
+  border-radius: 2.5px;
+  /* background-color: rgb(255, 255, 255); */
+  outline: none;
+  width: 98%;
+  border: 1px solid;
+  margin-top: 10%;
+  padding-top: 1%;
+}
+#submit {
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 22px;
+  font-weight: bolder;
+  background-color: teal;
+}
+#submit:hover {
+  color: white;
+  background-color: black;
+}
+#container01 {
+  padding-bottom: 100px;
+}

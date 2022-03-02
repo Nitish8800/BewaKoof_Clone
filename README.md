@@ -1,7 +1,7 @@
 
 # Website Link 
 
- https://nitish8800.github.io/BewKoof_Clone/
+ https://nitish8800.github.io/BewaKoof_Clone/
 
 # MASAI PROJECT Clone The BewKoof.Com
 

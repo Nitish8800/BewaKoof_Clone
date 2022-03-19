@@ -61,6 +61,10 @@ In Payment Page we have a hard code data and without full details we can’t go 
 
 ![App Screenshot](https://miro.medium.com/max/1000/1*-fHcl6qs2IafNQzZocZQfw.png)
 
+
+
+https://imgur.com/a/AqAPgIK
+
 This has been a great and wonderful experience. I’m so grateful for getting this opportunity, work with a collaborative team. There were some confusing situations that occurred while merging the pages. But Teamwork made it possible.
 
 
